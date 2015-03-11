@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoLFit.Core", "LoLFit.Core\LoLFit.Core.csproj", "{4D231554-C50F-4C54-8429-D3D43F4E3377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D231554-C50F-4C54-8429-D3D43F4E3377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D231554-C50F-4C54-8429-D3D43F4E3377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D231554-C50F-4C54-8429-D3D43F4E3377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D231554-C50F-4C54-8429-D3D43F4E3377}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
