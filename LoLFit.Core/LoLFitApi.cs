@@ -9,6 +9,7 @@ using LoLFit.Core.Model;
 using LoLFit.Core.Model.Enum;
 using ModernHttpClient;
 using Refit;
+using Flurl;
 
 namespace LoLFit.Core
 {
@@ -37,16 +38,31 @@ namespace LoLFit.Core
 
         public async Task<MatchDetails> GetMatchDetails(long matchId)
         {
-            var client = new HttpClient(new NativeMessageHandler())
+            var baseAddress = String.Format(Endpoints.BaseUrl, _region);
+            //var url = new Url(baseAddress);
+            //url.SetQueryParam("api_key", "db6828b1-3bbd-4535-993b-f96017ff9af3");
+            
+
+            var client = new HttpClient(new LoLNativeMessageHandler(GetToken))
             {
-                BaseAddress = new Uri(String.Format(Endpoints.BaseUrl, _region))
+                BaseAddress = new Uri(baseAddress)
             };
 
-            var service = RestService.For<ILeagueOfLegendsApi>(client);
+            var service = RestService.For<ILoLFitApi>(client);
 
             var results = await service.GetMatchDetails(matchId);
            
             return results;
+        }
+
+        private async Task<string> GetToken()
+        {
+            // The AquireTokenAsync call will prompt with a UI if necessary
+            // Or otherwise silently use a refresh token to return
+            // a valid access token 
+            var token = "db6828b1-3bbd-4535-993b-f96017ff9af3";
+
+            return token;
         }
     }
 }
