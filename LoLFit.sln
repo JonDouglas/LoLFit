@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoLFit.Core", "LoLFit.Core\LoLFit.Core.csproj", "{4D231554-C50F-4C54-8429-D3D43F4E3377}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoLFit.Console", "LoLFit.Console\LoLFit.Console.csproj", "{C9B55184-5679-4C2B-89AF-838142DB14BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoLFit.Droid", "LoLFit.Droid\LoLFit.Droid.csproj", "{F2B72925-5F6A-4DE6-9BB5-322D14C40123}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{4D231554-C50F-4C54-8429-D3D43F4E3377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D231554-C50F-4C54-8429-D3D43F4E3377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D231554-C50F-4C54-8429-D3D43F4E3377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B55184-5679-4C2B-89AF-838142DB14BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B55184-5679-4C2B-89AF-838142DB14BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B55184-5679-4C2B-89AF-838142DB14BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B55184-5679-4C2B-89AF-838142DB14BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B72925-5F6A-4DE6-9BB5-322D14C40123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B72925-5F6A-4DE6-9BB5-322D14C40123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B72925-5F6A-4DE6-9BB5-322D14C40123}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F2B72925-5F6A-4DE6-9BB5-322D14C40123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B72925-5F6A-4DE6-9BB5-322D14C40123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B72925-5F6A-4DE6-9BB5-322D14C40123}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
