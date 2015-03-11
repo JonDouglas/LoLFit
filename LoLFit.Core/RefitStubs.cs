@@ -46,9 +46,9 @@ namespace LoLFit.Core
             Client = client;
         }
 
-        public virtual Task<MatchDetails> GetMatchDetails(long matchId,string region)
+        public virtual Task<MatchDetails> GetMatchDetails(long matchId,string region,string apiKey)
         {
-            var arguments = new object[] { matchId,region };
+            var arguments = new object[] { matchId,region,apiKey };
             return (Task<MatchDetails>) methodImpls["GetMatchDetails"](Client, arguments);
         }
 

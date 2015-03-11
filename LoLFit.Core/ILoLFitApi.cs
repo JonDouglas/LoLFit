@@ -11,7 +11,7 @@ namespace LoLFit.Core
 {
     public interface ILoLFitApi
     {
-        [Get("/api/lol/{region}/v2.2/match/{matchId}")]
-        Task<MatchDetails> GetMatchDetails(long matchId, string region = "na"); //Enums do not seem to work, strings do though
+        [Get("/api/lol/{region}/v2.2/match/{matchId}?api_key={apiKey}")]
+        Task<MatchDetails> GetMatchDetails(long matchId, string region, string apiKey); //Enums do not seem to work, strings do though
     }
 }

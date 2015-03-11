@@ -28,7 +28,7 @@ namespace LoLFit.Droid
 
             button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
 
-            LoLFitApi a = new LoLFitApi("TEST", Region.NA);
+            LoLFitApi a = new LoLFitApi("db6828b1-3bbd-4535-993b-f96017ff9af3", Region.NA);
             var results = await a.GetMatchDetails(1752090973);
             var t = results.ToString();
         }

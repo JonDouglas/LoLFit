@@ -14,11 +14,11 @@ namespace LoLFit.Core
     {
         private readonly Func<Task<string>> getToken;
 
-        public LoLNativeMessageHandler(Func<Task<string>> getToken)
-        {
-            if (getToken == null) throw new ArgumentNullException("getToken");
-            this.getToken = getToken;
-        }
+        //public LoLNativeMessageHandler(Func<Task<string>> getToken)
+        //{
+        //    if (getToken == null) throw new ArgumentNullException("getToken");
+        //    this.getToken = getToken;
+        //}
 
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
