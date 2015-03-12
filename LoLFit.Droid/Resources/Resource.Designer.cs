@@ -27,6 +27,7 @@ namespace LoLFit.Droid
 		public static void UpdateIdValues()
 		{
 			global::ModernHttpClient.Resource.String.library_name = global::LoLFit.Droid.Resource.String.library_name;
+			global::Splat.Resource.String.library_name = global::LoLFit.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
